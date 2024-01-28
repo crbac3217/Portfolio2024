@@ -1,0 +1,28 @@
+.App {
+  position: relative;
+  z-index: 0; /* Base level for the app */
+}
+
+.center {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.animated-text {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.animated-text.hidden {
+  opacity: 0;
+}
+
+.text {
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}

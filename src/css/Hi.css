@@ -1,0 +1,15 @@
+/* Hi.css */
+.main-hi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+  }
+  
+  .main-hi.at-top {
+    position: fixed;
+    top: 0;
+    transform: translateX(-50%);
+  }

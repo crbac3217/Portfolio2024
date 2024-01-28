@@ -1,0 +1,18 @@
+/* Global styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Disables scrolling on the body */
+}
+
+.scroll-container {
+  scroll-snap-type: y mandatory; /* Enables vertical scroll snapping */
+  overflow-y: scroll; /* Allows vertical scrolling */
+  height: 100vh; /* Sets the height to fill the viewport */
+}
+
+/* Style for each full-height section */
+.first-section, .section {
+  scroll-snap-align: start; /* Ensures each section aligns to the start */
+  height: 100vh; /* Full viewport height */
+}
