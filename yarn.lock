@@ -2160,6 +2160,11 @@ react-scroll-motion@^0.3.3:
   resolved "https://registry.yarnpkg.com/react-scroll-motion/-/react-scroll-motion-0.3.3.tgz#8d9a562f98b7b59f05079ac95510f141fa6718f8"
   integrity sha512-Q33prpcdWDfQaHVmED7bo/EReUEBHfL6mOfvMGFP3FhDxTKddIoocMcd3bT9qw2KQ/fqNdJNADf7aiHWSLkXuQ==
 
+react-simple-typewriter@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/react-simple-typewriter/-/react-simple-typewriter-5.0.1.tgz#cfdb896c868a55ed4d5f1f06d62b3a9d0f5ad9d7"
+  integrity sha512-vA5HkABwJKL/DJ4RshSlY/igdr+FiVY4MLsSQYJX6FZG/f1/VwN4y1i3mPXRyfaswrvI8xii1kOVe1dYtO2Row==
+
 react-spring@^9.7.3:
   version "9.7.3"
   resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-9.7.3.tgz#3211dea4c4d7c5b541260af5100261b87becb5d5"

@@ -12,20 +12,11 @@
   align-items: center;
 }
 
-.main-hi {
-  transition: all 0.5s ease;
-  z-index: 10;
-  /* Dynamic positioning handled in component's state */
+.section {
+  min-height: 100vh; /* 100% of the viewport height */
+  /* Other styling for the section */
 }
 
-.hi-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('../images/hibg.png') center center no-repeat;
-  background-size: cover;
-  opacity: 0.5;
-  transition: opacity 0.5s;
+.main-container {
+  /* Other styling */
 }

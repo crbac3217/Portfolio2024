@@ -2,13 +2,13 @@
 html, body {
   height: 100%;
   margin: 0;
-  overflow: hidden; /* Disables scrolling on the body */
+  overflow: hidden; /* Prevents scrolling on the body */
 }
 
 .scroll-container {
   scroll-snap-type: y mandatory; /* Enables vertical scroll snapping */
   overflow-y: scroll; /* Allows vertical scrolling */
-  height: 100vh; /* Sets the height to fill the viewport */
+  height: 100vh; /* Ensures the container takes the full viewport height */
 }
 
 /* Style for each full-height section */

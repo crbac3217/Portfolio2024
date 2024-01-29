@@ -1,15 +1,19 @@
 /* Hi.css */
 .main-hi {
-    position: absolute;
+    position: fixed; /* or 'absolute', depending on your layout needs */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: top 0.3s ease, transform 0.3s ease;
     z-index: 10;
+    color: black; /* Set text color to white */
+    font-family: "ivypresto-display", serif; /* Use IvyPresto Display font */
+    font-weight: 400; /* Regular weight - adjust as needed */
+    text-align: center; /* Ensure text is centered */
+    /* Add any additional styling you need here */
   }
-  
+
   .main-hi.at-top {
     position: fixed;
     top: 0;
-    transform: translateX(-50%);
+    transform: translateX(-30%);
   }

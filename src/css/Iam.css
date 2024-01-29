@@ -1,0 +1,11 @@
+.typewriter-container {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black; /* Make sure the text color is visible */
+    background-color: white; /* Background for visibility */
+    padding: 20px;
+    border: 1px solid black; /* Border for visibility */
+  }
+  
