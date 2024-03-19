@@ -1,0 +1,7 @@
+.intro-container{
+    position: relative;
+    height: 400vh;
+    scroll-snap-align: start;
+    background-color:  blue;
+    z-index: 15;
+}
