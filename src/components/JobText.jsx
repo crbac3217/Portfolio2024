@@ -1,13 +1,11 @@
 // JobText.jsx
 import React from 'react';
-import '../css/JobText.css'; // Your existing CSS path
+import '../css/JobText.css';
 
-const JobText = ({ style = {} }) => {
+const JobText = ({ text, style = {} }) => {
     return (
         <div className="job-text" style={style}>
-        <h1>
-        and I'm a graphic designer
-        </h1>
+            <h1>and I'm a {text}</h1>
         </div>
     );
 };

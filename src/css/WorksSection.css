@@ -1,0 +1,6 @@
+.works-container{
+    position: relative;
+    scroll-snap-align: start;
+    background-color:  blue;
+    z-index: 15;
+}
