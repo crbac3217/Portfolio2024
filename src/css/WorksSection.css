@@ -1,6 +1,33 @@
 .works-container{
     position: relative;
     scroll-snap-align: start;
-    background-color:  blue;
+    min-height: 100vh;
+    background-color:  green;
     z-index: 15;
+}
+
+.works-list {
+    list-style: none;
+    padding: 0;
+}
+
+.work-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.work-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.thumbnail {
+    position: fixed;
+    width: 100px; /* Adjust the size */
+    height: 100px; /* Adjust the size */
+    background-size: cover;
+    background-position: center;
+    pointer-events: none; /* This makes sure the cursor doesn't interact with the thumbnail */
+    transform: translate(-50%, -50%); /* Center the thumbnail around the cursor */
 }
