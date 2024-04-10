@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Thumbnail from './Thumbnail';
 import '../css/WorksSection.css';
 
 const worksData = [
@@ -22,6 +23,7 @@ const worksData = [
 const WorksSection = () => {
     const [thumbnailPosition, setThumbnailPosition] = useState({ x: 0, y: 0, visible: false });
     const [hoveredItem, setHoveredItem] = useState(null);
+    const [selectedItem, setSelectedItem] = useState(null);
 
     useEffect(() => {
         const handleMouseMove = (e) => {
@@ -34,7 +36,7 @@ const WorksSection = () => {
         return () => {
             document.removeEventListener('mousemove', handleMouseMove);
         };
-    }, [hoveredItem]); // Dependency to update position only when an item is hovered
+    }, [hoveredItem]);
 
     const handleMouseEnter = (item) => {
         setHoveredItem(item);
@@ -45,8 +47,12 @@ const WorksSection = () => {
         setThumbnailPosition(prev => ({ ...prev, visible: false }));
     };
 
+    const handleClick = (item, event) => {
+        event.stopPropagation();
+        setSelectedItem(selectedItem === item ? null : item);
+    };
+
     const getThumbnailColor = (itemId) => {
-        // Example logic to change color, can be adjusted as needed
         return itemId === 2 ? 'red' : 'blue';
     };
 
@@ -55,24 +61,26 @@ const WorksSection = () => {
             <h2>Works</h2>
             <ul className="works-list">
                 {worksData.map(item => (
-                    <li key={item.id} className="work-item"
+                    <li key={item.id} 
+                        className="work-item"
                         onMouseEnter={() => handleMouseEnter(item)}
                         onMouseLeave={handleMouseLeave}>
-                        <h3>{item.title}</h3>
+                        <div className="work-header" onClick={(e) => handleClick(item, e)}>
+                            <h3>{item.title}</h3>
+                        </div>
+                        {selectedItem === item && (
+                            <div className="work-description">
+                                <p>{item.description}</p>
+                            </div>
+                        )}
                     </li>
                 ))}
             </ul>
             {hoveredItem && thumbnailPosition.visible && (
-                <div style={{
-                    position: 'fixed',
-                    left: thumbnailPosition.x,
-                    top: thumbnailPosition.y,
-                    width: '100px',
-                    height: '100px',
-                    backgroundColor: getThumbnailColor(hoveredItem.id),
-                    transform: 'translate(-50%, -50%)',
-                    display: 'block'
-                }} />
+                <Thumbnail
+                    position={thumbnailPosition}
+                    color={getThumbnailColor(hoveredItem.id)}
+                />
             )}
         </div>
     );
