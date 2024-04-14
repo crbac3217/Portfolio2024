@@ -24,10 +24,11 @@
 
 .thumbnail {
     position: fixed;
-    width: 100px; /* Adjust the size */
-    height: 100px; /* Adjust the size */
-    background-size: cover;
-    background-position: center;
-    pointer-events: none; /* This makes sure the cursor doesn't interact with the thumbnail */
-    transform: translate(-50%, -50%); /* Center the thumbnail around the cursor */
+    display: block;
+    max-width: 20vw;
+    max-height: 20vh;
+}
+.thumbnailImage {
+    max-width: 100%;
+    max-height: 100%;
 }

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Thumbnail from './Thumbnail';
+import Unfold from './Unfold';
 import '../css/WorksSection.css';
+import image1 from '../assets/img/AltarLogo_2016_MASTER.png';
+import image2 from '../assets/img/lmax.png';
 
 const worksData = [
     {
@@ -8,14 +11,16 @@ const worksData = [
         title: 'Project 1',
         type: 'Web Design',
         skills: ['HTML', 'CSS', 'JavaScript'],
-        description: 'Detailed description of Project 1.'
+        description: 'Detailed description of Project 1.',
+        image: image1
     },
     {
         id: 2,
         title: 'Project 2',
         type: 'Graphic Design',
         skills: ['Photoshop', 'Illustrator'],
-        description: 'Detailed description of Project 2.'
+        description: 'Detailed description of Project 2.',
+        image: image2
     },
     // Add more items as needed...
 ];
@@ -52,10 +57,6 @@ const WorksSection = () => {
         setSelectedItem(selectedItem === item ? null : item);
     };
 
-    const getThumbnailColor = (itemId) => {
-        return itemId === 2 ? 'red' : 'blue';
-    };
-
     return (
         <div className='works-container'>
             <h2>Works</h2>
@@ -70,7 +71,7 @@ const WorksSection = () => {
                         </div>
                         {selectedItem === item && (
                             <div className="work-description">
-                                <p>{item.description}</p>
+                                <Unfold item={selectedItem}/>
                             </div>
                         )}
                     </li>
@@ -79,7 +80,7 @@ const WorksSection = () => {
             {hoveredItem && thumbnailPosition.visible && (
                 <Thumbnail
                     position={thumbnailPosition}
-                    color={getThumbnailColor(hoveredItem.id)}
+                    image = {hoveredItem.image}
                 />
             )}
         </div>

@@ -1,20 +1,17 @@
 // Thumbnail.jsx
 import React from 'react';
+import '../css/WorksSection.css';
 
-const Thumbnail = ({ position, color }) => {
+const Thumbnail = ({ position, image }) => {
     if (!position.visible) return null;
 
     return (
-        <div style={{
-            position: 'fixed',
-            left: position.x,
-            top: position.y,
-            width: '100px',
-            height: '100px',
-            backgroundColor: color,
-            transform: 'translate(-50%, -50%)',
-            display: 'block'
-        }} />
+        <div className='thumbnail' style={{
+            left: `${position.x + 5}px`,
+            top: `${position.y + 5}px`,
+        }}>
+        <img src={image} alt='Thumbnail' className='thumbnailImage'/>
+        </div>
     );
 };
 
