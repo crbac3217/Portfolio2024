@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Hi from './Hi';
 import JobText from './JobText';
 import '../css/WelcomeSection.css';
+import BenGDVid from '../assets/video/BenGD.gif';
 
 const WelcomeSection = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -106,8 +107,8 @@ const WelcomeSection = () => {
         bottom: scrollPosition >= section2Ref.current?.offsetTop ? '10%' : 'auto',
         left: '50%',
         transform: 'translateX(-50%)',
-        color: 'black', // Example style, adjust as needed
-        fontSize: `2vw`, // Example style, adjust as needed
+        color: 'white',
+        fontSize: `2em`,
     };
 
     return (
@@ -117,7 +118,7 @@ const WelcomeSection = () => {
                 <h2>Section 1</h2>
             </div>
             <div className="snap-point" ref={section2Ref}>
-                <h2>Section 2</h2>
+            <img src={BenGDVid} alt="Ben" />
             </div>
             <div className="snap-point" ref={section3Ref}>
                 <h2>Section 3</h2>

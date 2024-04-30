@@ -3,7 +3,7 @@ import '../css/Hi.css';
 
 const Hi = ({ size, top, text }) => {
     const style = {
-        fontSize: `${size}vw`, // Apply responsive font size
+        fontSize: `${size}em`,
         position: 'absolute',
         top: `${top}`,
         left: '50%',
@@ -13,7 +13,7 @@ const Hi = ({ size, top, text }) => {
 
     return (
         <div className="hi-container" style={style}>
-            <h1>{text}</h1>
+            {text}
         </div>
     );
 };

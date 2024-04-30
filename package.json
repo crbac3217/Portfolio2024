@@ -12,7 +12,9 @@
   "dependencies": {
     "@react-three/drei": "^9.96.5",
     "@react-three/fiber": "^8.15.15",
+    "bootstrap": "^5.3.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-scroll-motion": "^0.3.3",
     "react-simple-typewriter": "^5.0.1",

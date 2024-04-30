@@ -6,8 +6,9 @@ html, body {
 }
 #root {
     height: 100vh;
-    overflow-y: auto;
     scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    overflow-x:hidden;
 }
 * {
     margin: 0;

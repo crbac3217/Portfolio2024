@@ -2,8 +2,11 @@
     position: relative;
     height: 100vh;
     scroll-snap-align: start;
-    background-color: gray;
-    z-index: 1;
+    background-color: #FFBE98;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    z-index: 0;
 }
 .welcome-section{
     font-family: ivypresto-display, serif;
@@ -12,4 +15,8 @@
 }
 h1{
     font-weight: 400;
+}
+.benNames{
+    width: 80vw;
+    z-index: 5;
 }
