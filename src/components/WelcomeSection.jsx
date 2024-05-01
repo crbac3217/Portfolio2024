@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Hi from './Hi';
 import JobText from './JobText';
 import '../css/WelcomeSection.css';
-import BenGDVid from '../assets/video/BenGD.gif';
+import BenGDVid from '../assets/video/BenGD.webm';
 
 const WelcomeSection = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -118,7 +118,7 @@ const WelcomeSection = () => {
                 <h2>Section 1</h2>
             </div>
             <div className="snap-point" ref={section2Ref}>
-            <img src={BenGDVid} alt="Ben" />
+            <video src={BenGDVid} alt="Ben" className='benNames' autoPlay loop muted/>
             </div>
             <div className="snap-point" ref={section3Ref}>
                 <h2>Section 3</h2>
