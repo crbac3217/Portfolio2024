@@ -20,3 +20,10 @@ h1{
     width: 80vw;
     z-index: 5;
 }
+.game {
+    position: relative;
+    width: 60vw;
+    height: 60vh;
+    margin: auto;
+    overflow: hidden;
+}

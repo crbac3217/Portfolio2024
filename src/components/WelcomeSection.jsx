@@ -3,6 +3,7 @@ import Hi from './Hi';
 import JobText from './JobText';
 import '../css/WelcomeSection.css';
 import BenGDVid from '../assets/video/BenGD.webm';
+import Game from './Game';
 
 const WelcomeSection = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -115,13 +116,12 @@ const WelcomeSection = () => {
         <div className="welcome-section">
             <Hi size={size} top={top} text={text} />
             <div className="snap-point">
-                <h2>Section 1</h2>
             </div>
             <div className="snap-point" ref={section2Ref}>
             <video src={BenGDVid} alt="Ben" className='benNames' autoPlay loop muted/>
             </div>
             <div className="snap-point" ref={section3Ref}>
-                <h2>Section 3</h2>
+                <Game></Game>
             </div>
             <div className="snap-point" ref={section4Ref}>
                 <h2>Section 4</h2>

@@ -148,7 +148,7 @@ const WorksSection = () => {
             <ul className="works-list">
             {worksData.map((item, index) => (
             <li key={index} 
-                className="work-item">
+                className={`work-item ${selectedItem === item ? 'work-item-selected' : ''}`}>
                 <div className="work-header" onClick={(e) => handleClick(item, e)} onMouseEnter={() => handleMouseEnter(item)}
                 onMouseLeave={handleMouseLeave}>
                     <h3 className='work-title'>{item.title}</h3>

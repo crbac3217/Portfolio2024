@@ -33,8 +33,24 @@
 
 .work-item {
     cursor: pointer;
-    margin-bottom: 0.2em;
-    padding-top: 0.2em;
+    padding-bottom: 0.1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    border-radius: 5px;
+    width:80vw;
+    background: #EECFB8;
+    box-shadow: 2.5px 2.5px 8px #eac5a9,
+               -2.5px -2.5px 8px #f4e1d2;
+    transition: box-shadow 0.25s ease,
+                background-color 0.25s ease;
+}
+
+.work-item-selected {
+    box-shadow: inset 2.5px 2.5px 8px #eac5a9,
+                inset -2.5px -2.5px 8px #f3dece;
+    background:#edcdb5;
 }
 
 .work-details {
@@ -64,11 +80,10 @@
     max-height: 100%;
 }
 .unfoldedSection-head{
-    width: 100vw;
+    width: 100%;
 }
 .UnfoldRight{
     text-align: end;
-    padding-right: 5em;
 }
 
 .row>*{
