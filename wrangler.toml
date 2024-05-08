@@ -1,0 +1,8 @@
+name = "portfolio2024"
+type = "webpack"
+
+[build]
+  command = "yarn install && yarn build"
+
+[env.production]
+  name = "portfolio2024-production"
