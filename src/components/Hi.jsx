@@ -3,7 +3,7 @@ import '../css/Hi.css';
 
 const Hi = ({ size, top, text }) => {
     const style = {
-        fontSize: `${size}em`,
+        fontSize: `${size}rem`,
         position: 'absolute',
         top: `${top}`,
         left: '50%',

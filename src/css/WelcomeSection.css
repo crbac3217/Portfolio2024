@@ -27,3 +27,8 @@ h1{
     margin: auto;
     overflow: hidden;
 }
+
+.Three{
+    width: 60vw;
+    height: 60vh;
+}

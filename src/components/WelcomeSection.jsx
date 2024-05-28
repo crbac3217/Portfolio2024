@@ -3,7 +3,9 @@ import Hi from './Hi';
 import JobText from './JobText';
 import '../css/WelcomeSection.css';
 import BenGDVid from '../assets/video/BenGD.webm';
+import BenMG from '../assets/video/MotionGr.webm';
 import Game from './Game';
+import Canv from './3DCanvas';
 
 const WelcomeSection = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -109,7 +111,7 @@ const WelcomeSection = () => {
         left: '50%',
         transform: 'translateX(-50%)',
         color: 'white',
-        fontSize: `2em`,
+        fontSize: `2rem`,
     };
 
     return (
@@ -121,13 +123,13 @@ const WelcomeSection = () => {
             <video src={BenGDVid} alt="Ben" className='benNames' autoPlay loop muted/>
             </div>
             <div className="snap-point" ref={section3Ref}>
-                <Game></Game>
+                <Game/>
             </div>
             <div className="snap-point" ref={section4Ref}>
-                <h2>Section 4</h2>
+            <video src={BenMG} alt="Ben" className='benNames' autoPlay loop muted/>
             </div>
             <div className="snap-point" ref={section5Ref}>
-                <h2>Section 5</h2>
+                <Canv />
             </div>
             <div className="snap-point" ref={section6Ref}>
                 <h2>Section 6</h2>
