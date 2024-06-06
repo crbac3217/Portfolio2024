@@ -2,10 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import Hi from './Hi';
 import JobText from './JobText';
 import '../css/WelcomeSection.css';
-import BenGDVid from '../assets/video/BenGD.webm';
-import BenMG from '../assets/video/MotionGr.webm';
 import Game from './Game';
 import Canv from './3DCanvas';
+import FrontEnd from './FrontEnd';
 
 const WelcomeSection = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -18,7 +17,7 @@ const WelcomeSection = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const position = rootElement.scrollTop;
+            const position = rootElement.scrollTop || window.scrollY;
             setScrollPosition(position);
         };
 
@@ -27,7 +26,17 @@ const WelcomeSection = () => {
         return () => {
             rootElement.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [rootElement]);
+
+    const isCanvVisible = () => {
+        if (section5Ref.current && section6Ref.current) {
+            const section5Top = section5Ref.current.offsetTop;
+            const section6Top = section6Ref.current.offsetTop;
+            const viewportHeight = window.innerHeight;
+            return scrollPosition >= (section5Top - viewportHeight) && scrollPosition < (section6Top);
+        }
+        return false;
+    };
 
     let fullText = "Hi, my name is";
     let J1 = "Graphic Designer";
@@ -103,7 +112,6 @@ const WelcomeSection = () => {
         }
     }
 
-
     // Determine JobText style based on scroll position
     let jobTextStyle = {
         position: 'absolute',
@@ -120,21 +128,21 @@ const WelcomeSection = () => {
             <div className="snap-point">
             </div>
             <div className="snap-point" ref={section2Ref}>
-            <video src={BenGDVid} alt="Ben" className='benNames' autoPlay loop muted/>
+                <video src={'/video/BenGD.webm'} alt="Ben" className='benNames' autoPlay loop muted />
             </div>
             <div className="snap-point" ref={section3Ref}>
-                <Game/>
+                <Game />
             </div>
             <div className="snap-point" ref={section4Ref}>
-            <video src={BenMG} alt="Ben" className='benNames' autoPlay loop muted/>
+                <video src={'/video/MotionGr.webm'} alt="Ben" className='benNames' autoPlay loop muted />
             </div>
             <div className="snap-point" ref={section5Ref}>
-                <Canv />
+                {isCanvVisible() && <Canv />}
             </div>
             <div className="snap-point" ref={section6Ref}>
-                <h2>Section 6</h2>
+                <FrontEnd />
             </div>
-            <JobText text = {jobText} style={jobTextStyle} />
+            <JobText text={jobText} style={jobTextStyle} />
         </div>
     );
 };

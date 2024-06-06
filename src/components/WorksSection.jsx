@@ -3,8 +3,6 @@ import { Col } from 'react-bootstrap';
 import Thumbnail from './Thumbnail';
 import Unfold from './Unfold';
 import '../css/WorksSection.css';
-import image1 from '../assets/img/AltarLogo_2016_MASTER.png';
-import image2 from '../assets/img/lmax.png';
 import AandH from './works/AandH';
 import Arcus from './works/Arcus';
 import DbdTome16 from './works/DbDTome16';
@@ -24,7 +22,7 @@ const worksData = [
         type: ['Graphic Design'],
         skills: ['Typography', 'Adobe Illustrator'],
         body: AandH,
-        image: image1
+        image: '/images/AltarLogo_2016_MASTER.png'
     },
     {
         title: 'Fluid Typography',
@@ -33,7 +31,7 @@ const worksData = [
         type: ['Graphic Design'],
         skills: ['Unity', 'Typography'],
         body: FluidTypo,
-        image: image2
+        image: '/images/AltarLogo_2016_MASTER.png'
     },
     {
         title: 'Scribble Kitty Adventure',
@@ -42,7 +40,7 @@ const worksData = [
         type: ['Game Design'],
         skills: ['Unity', 'Blender', 'C#'],
         body: Scribble,
-        image: image2
+        image: '/images/AltarLogo_2016_MASTER.png'
     },
     {
         title: 'Arcus',
@@ -51,7 +49,7 @@ const worksData = [
         type: ['Game Design'],
         skills: ['Unity', 'Blender', 'C#', 'Adobe Photoshop'],
         body: Arcus,
-        image: image2
+        image: '/images/AltarLogo_2016_MASTER.png'
     },
     {
         title: 'Dead by Daylight | Tome 16: EXISTENCE | Reveal Trailer',
@@ -60,7 +58,7 @@ const worksData = [
         type: ['Game Engine Trailer', 'Motion Design', 'Game Capture'],
         skills: ['Adobe After Effects', 'VFX', 'Unreal Engine', 'Adobe Photoshop'],
         body: DbdTome16,
-        image: image2
+        image: '/images/AltarLogo_2016_MASTER.png'
     },
     {
         title: 'Omm',
@@ -69,7 +67,7 @@ const worksData = [
         type: ['Front End Development', 'UI/UX Design'],
         skills: ['Adobe XD', 'Adobe Illustrator', 'Blender', 'Adobe Photoshop', 'Flutter'],
         body: Omm,
-        image: image2
+        image: '/images/AltarLogo_2016_MASTER.png'
     },
     {
         title: 'Skull and Bones: Gameplay Deep Dive Trailer',
@@ -78,7 +76,7 @@ const worksData = [
         type: ['Gameplay Capture', 'Motion Design', 'Game Capture'],
         skills: ['Adobe After Effects', 'VFX', 'Adobe Photoshop'],
         body: SnB101,
-        image: image2
+        image: '/images/AltarLogo_2016_MASTER.png'
     },
     {
         title: 'Marketing Camera',
@@ -87,7 +85,7 @@ const worksData = [
         type: ['Game Design'],
         skills: ['Unity', 'C#', 'Unreal Engine', 'C++'],
         body:MCam,
-        image: image2
+        image: '/images/AltarLogo_2016_MASTER.png'
     },
     {
         title: 'Dragonkin: The Banished - Official Announcement Trailer',
@@ -96,7 +94,7 @@ const worksData = [
         type: ['3D Modelling', 'Game Engine Trailer'],
         skills: ['Unreal Engine', '3D Modelling', 'Quixel Mixer', 'Marvelous Designer', 'Adobe Photoshop', 'Adobe Substance Painter', 'Autodesk Maya'],
         body: Dkin,
-        image: image2,
+        image: '/images/AltarLogo_2016_MASTER.png',
     },
     {
         title: 'Portfolio',
@@ -105,7 +103,7 @@ const worksData = [
         type: ['FrontEnd Development'],
         skills: ['React', '3D Modelling', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe After Effects'],
         body: Portfolio,
-        image: image2,
+        image: '/images/AltarLogo_2016_MASTER.png',
     }
 ];
 
