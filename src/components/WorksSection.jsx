@@ -180,17 +180,17 @@ const WorksSection = () => {
               className='buttonicon'
             />
           </a>
-      <a href="https://github.com/crbac3217" target="_blank" rel="noopener noreferrer">
-            <img
-              src={`/img/github.svg`}
-              alt="GitHub"
-              className='buttonicon'
-            />
-          </a>
           <a href="https://www.linkedin.com/in/hakgyun-lee-61615511a/" target="_blank" rel="noopener noreferrer">
             <img
               src={`/img/linkedin.svg`}
               alt="LinkedIn"
+              className='buttonicon'
+            />
+          </a>
+      <a href="https://github.com/crbac3217" target="_blank" rel="noopener noreferrer">
+            <img
+              src={`/img/github.svg`}
+              alt="GitHub"
               className='buttonicon'
             />
           </a>

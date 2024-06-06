@@ -133,10 +133,10 @@ iframe{
   .button span {
     z-index: 1;
     display: inline-block;
-    background-color: #ffffff;
+    background-color: #584433;
     height: 4em;
     width: 20em;
-    color: #000;
+    color: #fff;
     line-height: 3em;
     font-size: 18px;
     letter-spacing: 3px;
