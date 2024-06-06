@@ -25,10 +25,12 @@ const DbdTome16 = () => {
                     </Col>
                     <Col xs = {6}>
                     <Row>
-                    This is where the image goes
+                    <img src= '/img/Tome16Thumb.jpg' alt='Tome16' className='workImages'/>
                     </Row>
                     <Row>
-                    This is where the image goes
+                    <iframe className='workImages'
+                    src="https://youtu.be/K3NWBrL7E8c">
+                    </iframe>
                     </Row>
                     </Col>
                 </Row>

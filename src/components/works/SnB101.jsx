@@ -25,10 +25,12 @@ const SnB101 = () => {
                     </Col>
                     <Col xs = {6}>
                     <Row>
-                    This is where the image goes
+                    <img src= '/img/SnB1.png' alt='SkullAndBones' className='workImages'/>
                     </Row>
                     <Row>
-                    This is where the image goes
+                    <iframe className='workImages'
+                    src="https://youtu.be/teZaV3bOMxY">
+                    </iframe>
                     </Row>
                     </Col>
                 </Row>

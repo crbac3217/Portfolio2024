@@ -22,10 +22,13 @@ const Arcus = () => {
                     </Col>
                     <Col xs = {6}>
                     <Row>
-                    This is where the image goes
+                    <img src= '/img/arcus2.jpg' alt='Tome16' className='workImages'/>
                     </Row>
                     <Row>
-                    This is where the image goes
+                    <img src= '/img/arcuswork1.jpg' alt='Tome16' className='workImages'/>
+                    </Row>
+                    <Row>
+                    <img src= '/img/arcuswork2.jpg' alt='Tome16' className='workImages'/>
                     </Row>
                     </Col>
                 </Row>

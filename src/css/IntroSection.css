@@ -2,9 +2,14 @@
     position: relative;
     min-height: 100vh;
     scroll-snap-align: start;
-    background-color:  #FFCCA4;
+    background: linear-gradient(to bottom, #FFBE98, #FFCCA4);
     z-index: 15;
 }
+
+a{
+    color:#fd3131;
+}
+
 .intro-content{
     padding-left: 10vw;
     padding-right: 10vw;

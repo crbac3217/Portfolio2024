@@ -21,10 +21,12 @@ const Dkin = () => {
                     </Col>
                     <Col xs = {6}>
                     <Row>
-                    This is where the image goes
+                    <img src= '/img/DKProg.jpg' alt='DragonKinUnreal' className='workImages'/>
                     </Row>
                     <Row>
-                    This is where the image goes
+                    <iframe className='workImages'
+                    src="https://youtu.be/bPUHW_Uz0_Y">
+                    </iframe>
                     </Row>
                     </Col>
                 </Row>

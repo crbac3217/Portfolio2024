@@ -21,10 +21,13 @@ const FluidTypo = () => {
                     </Col>
                     <Col xs = {6}>
                     <Row>
-                    This is where the image goes
+                    <img src= '/img/Grid1.jpg' alt='Tome16' className='workImages'/>
                     </Row>
                     <Row>
-                    This is where the image goes
+                    <img src= '/img/Grid2.jpg' alt='Tome16' className='workImages'/>
+                    </Row>
+                    <Row>
+                    <img src= '/img/GridThumb.jpg' alt='Tome16' className='workImages'/>
                     </Row>
                     </Col>
                 </Row>

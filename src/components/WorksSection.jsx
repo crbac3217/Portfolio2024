@@ -22,7 +22,7 @@ const worksData = [
         type: ['Graphic Design'],
         skills: ['Typography', 'Adobe Illustrator'],
         body: AandH,
-        image: '/images/AltarLogo_2016_MASTER.png'
+        image: '/img/AHThumb.jpg'
     },
     {
         title: 'Fluid Typography',
@@ -31,7 +31,7 @@ const worksData = [
         type: ['Graphic Design'],
         skills: ['Unity', 'Typography'],
         body: FluidTypo,
-        image: '/images/AltarLogo_2016_MASTER.png'
+        image: '/img/GridThumb.jpg'
     },
     {
         title: 'Scribble Kitty Adventure',
@@ -40,7 +40,7 @@ const worksData = [
         type: ['Game Design'],
         skills: ['Unity', 'Blender', 'C#'],
         body: Scribble,
-        image: '/images/AltarLogo_2016_MASTER.png'
+        image: '/img/sk1.jpg'
     },
     {
         title: 'Arcus',
@@ -49,7 +49,7 @@ const worksData = [
         type: ['Game Design'],
         skills: ['Unity', 'Blender', 'C#', 'Adobe Photoshop'],
         body: Arcus,
-        image: '/images/AltarLogo_2016_MASTER.png'
+        image: '/img/arcusThumb.jpg'
     },
     {
         title: 'Dead by Daylight | Tome 16: EXISTENCE | Reveal Trailer',
@@ -58,7 +58,7 @@ const worksData = [
         type: ['Game Engine Trailer', 'Motion Design', 'Game Capture'],
         skills: ['Adobe After Effects', 'VFX', 'Unreal Engine', 'Adobe Photoshop'],
         body: DbdTome16,
-        image: '/images/AltarLogo_2016_MASTER.png'
+        image: '/img/Tome16Thumb.jpg'
     },
     {
         title: 'Omm',
@@ -67,7 +67,7 @@ const worksData = [
         type: ['Front End Development', 'UI/UX Design'],
         skills: ['Adobe XD', 'Adobe Illustrator', 'Blender', 'Adobe Photoshop', 'Flutter'],
         body: Omm,
-        image: '/images/AltarLogo_2016_MASTER.png'
+        image: '/img/ommThumb.png'
     },
     {
         title: 'Skull and Bones: Gameplay Deep Dive Trailer',
@@ -76,7 +76,7 @@ const worksData = [
         type: ['Gameplay Capture', 'Motion Design', 'Game Capture'],
         skills: ['Adobe After Effects', 'VFX', 'Adobe Photoshop'],
         body: SnB101,
-        image: '/images/AltarLogo_2016_MASTER.png'
+        image: '/img/SnBThumb.jpg'
     },
     {
         title: 'Marketing Camera',
@@ -85,7 +85,7 @@ const worksData = [
         type: ['Game Design'],
         skills: ['Unity', 'C#', 'Unreal Engine', 'C++'],
         body:MCam,
-        image: '/images/AltarLogo_2016_MASTER.png'
+        image: '/img/MCam1.jpg'
     },
     {
         title: 'Dragonkin: The Banished - Official Announcement Trailer',
@@ -94,7 +94,7 @@ const worksData = [
         type: ['3D Modelling', 'Game Engine Trailer'],
         skills: ['Unreal Engine', '3D Modelling', 'Quixel Mixer', 'Marvelous Designer', 'Adobe Photoshop', 'Adobe Substance Painter', 'Autodesk Maya'],
         body: Dkin,
-        image: '/images/AltarLogo_2016_MASTER.png',
+        image: '/img/DKThumb.jpg'
     },
     {
         title: 'Portfolio',
@@ -103,7 +103,7 @@ const worksData = [
         type: ['FrontEnd Development'],
         skills: ['React', '3D Modelling', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe After Effects'],
         body: Portfolio,
-        image: '/images/AltarLogo_2016_MASTER.png',
+        image: '/img/portThumb.PNG'
     }
 ];
 
@@ -140,9 +140,10 @@ const WorksSection = () => {
     };
 
     return (
-        <div className='works-bg'>
-        <div className='works-container'>
-        <h2 className='title display-5'>Works</h2>
+        <div className='snap'>
+            <div className='works-bg'>
+                <div className='works-container'>
+                <h2 className='title display-5'>Works</h2>
             <ul className="works-list">
             {worksData.map((item, index) => (
             <li key={index} 
@@ -168,6 +169,42 @@ const WorksSection = () => {
             )}
         </div>
         </div>
+        <div className='contacts-bg'>
+        <div className="button">
+      <span>Let's get in touch!</span>
+      <div className="container">
+      <a href="mailto:crbac3217@gmail.com" target="_blank" rel="noopener noreferrer">
+            <img
+              src={`/img/gmail.svg`}
+              alt="GMail"
+              className='buttonicon'
+            />
+          </a>
+      <a href="https://github.com/crbac3217" target="_blank" rel="noopener noreferrer">
+            <img
+              src={`/img/github.svg`}
+              alt="GitHub"
+              className='buttonicon'
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/hakgyun-lee-61615511a/" target="_blank" rel="noopener noreferrer">
+            <img
+              src={`/img/linkedin.svg`}
+              alt="LinkedIn"
+              className='buttonicon'
+            />
+          </a>
+          <a href="https://crbac3217.itch.io/" target="_blank" rel="noopener noreferrer">
+            <img
+              src={`/img/itchio.svg`}
+              alt="itch.io"
+              className='buttonicon'
+            />
+          </a>
+      </div>
+    </div>
+        </div>
+        </div> 
     );
 };
 

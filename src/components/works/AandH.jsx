@@ -22,10 +22,15 @@ const AndH = () => {
                     </Col>
                     <Col xs = {6}>
                     <Row>
-                    This is where the image goes
+                    <img src= '/img/AHThumb.jpg' alt='Tome16' className='workImages'/>
                     </Row>
-                    <Row>
-                    This is where the image goes
+                    <Row className='workImages'>
+                    <Col>
+                    <img src= '/img/AHwork1.jpg' alt='Tome16' className='workImages'/>
+                    </Col>
+                    <Col>
+                    <img src= '/img/AHwork2.jpg' alt='Tome16' className='workImages'/>
+                    </Col>
                     </Row>
                     </Col>
                 </Row>

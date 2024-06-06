@@ -24,10 +24,11 @@ const MCam = () => {
                     </Col>
                     <Col xs = {6}>
                     <Row>
-                    This is where the image goes
-                    </Row>
-                    <Row>
-                    This is where the image goes
+                    <img src= '/img/MCam1.jpg' alt='MCam1' className='workImages'/>
+                    </Row><Row>
+                    <img src= '/img/MCam2.jpg' alt='MCam2' className='workImages'/>
+                    </Row><Row>
+                    <img src= '/img/MCam3.jpg' alt='MCam3' className='workImages'/>
                     </Row>
                     </Col>
                 </Row>

@@ -21,10 +21,10 @@ const Scribble = () => {
                     </Col>
                     <Col xs = {6}>
                     <Row>
-                    This is where the image goes
+                    <img src= '/img/sk2.jpg' alt='omm' className='workImages'/>
                     </Row>
                     <Row>
-                    This is where the image goes
+                    <img src= '/img/sk3.jpg' alt='omm' className='workImages'/>
                     </Row>
                     </Col>
                 </Row>

@@ -22,10 +22,10 @@ const Portfolio = () => {
                     </Col>
                     <Col xs = {6}>
                     <Row>
-                    This is where the image goes
+                    <img src= '/img/portWork.PNG' alt='MCam3' className='workImages'/>
                     </Row>
                     <Row>
-                    This is where the image goes
+                    <img src= '/img/portWork2.PNG' alt='MCam3' className='workImages'/>
                     </Row>
                     </Col>
                 </Row>

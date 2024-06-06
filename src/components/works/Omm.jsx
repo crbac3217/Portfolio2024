@@ -23,11 +23,18 @@ const Omm = () => {
                     </Row>
                     </Col>
                     <Col xs = {6}>
+                    <Row className='workImages'>
+                    <Col>
                     <Row>
-                    This is where the image goes
+                    <img src= '/img/ommThumb.png' alt='omm' className='workImages'/>
                     </Row>
                     <Row>
-                    This is where the image goes
+                    <img src= '/img/omm.PNG' alt='omm' className='workImages'/>
+                    </Row>
+                    </Col>
+                    <Col>
+                    <img src= '/img/OmmPhone.jpg' alt='OmmPhone' className='workImages'/>
+                    </Col>
                     </Row>
                     </Col>
                 </Row>
