@@ -29,7 +29,7 @@ const SnB101 = () => {
                     </Row>
                     <Row>
                     <iframe className='workImages'
-                    src="https://youtu.be/teZaV3bOMxY">
+                    src="https://www.youtube.com/embed/teZaV3bOMxY">
                     </iframe>
                     </Row>
                     </Col>

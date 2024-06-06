@@ -29,7 +29,7 @@ const DbdTome16 = () => {
                     </Row>
                     <Row>
                     <iframe className='workImages'
-                    src="https://youtu.be/K3NWBrL7E8c">
+                    src="https://www.youtube.com/embed/K3NWBrL7E8c">
                     </iframe>
                     </Row>
                     </Col>

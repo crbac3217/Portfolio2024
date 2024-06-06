@@ -25,7 +25,7 @@ const Dkin = () => {
                     </Row>
                     <Row>
                     <iframe className='workImages'
-                    src="https://youtu.be/bPUHW_Uz0_Y">
+                    src="https://www.youtube.com/embed/bPUHW_Uz0_Y">
                     </iframe>
                     </Row>
                     </Col>

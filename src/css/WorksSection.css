@@ -98,6 +98,10 @@
     margin-bottom: 1vh;
 }
 
+iframe{
+    min-height: 40vh;
+}
+
 .contacts-bg{
     display: flex;
     position: relative;
