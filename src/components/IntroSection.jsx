@@ -10,28 +10,28 @@ const IntroSection = () => {
             <Row className="intro-content">
                 <Col xs={12}>
                     <Row className="display-1 dpText">Hello,</Row>
-                    <Row>I am Ben Hakgyun Lee, an exquisitely versatile and deeply committed creative technologist, with a Bachelor’s degree from OCAD University.
+                    <Row className='introDesc'>I am Ben Hakgyun Lee, an exquisitely versatile and deeply committed creative technologist, with a Bachelor’s degree from OCAD University.
                         My academic journey was rich with diverse studio courses, equipping me with a profound expertise in both traditional and digital art forms.
                         My technical prowess spans an impressive array of tools and technologies including Adobe Creative Suite (Photoshop, Illustrator, Premiere, After Effects,
                         XD, Substance Painter, and InDesign), 3D modeling and animation tools (Blender, ZBrush, Maya, Rhino3D, Marvelous Designer), and comprehensive game development
                         platforms (Unreal Engine, Unity). Additionally, I am skilled in web development technologies such as JavaScript, HTML, CSS, React, alongside programming languages
                         like Python, C#, and C++.</Row>
-                    <Row>My tenure at Altar Creative in Montreal allowed me to thrive in an environment that bridges high-stakes advertising with the interactive world of
+                    <Row className='introDesc'>My tenure at Altar Creative in Montreal allowed me to thrive in an environment that bridges high-stakes advertising with the interactive world of
                         video game commercials. Here, I applied my skills in motion graphics, video editing, and digital design, further refining my ability to contribute uniquely
                         in high-paced, innovative settings. This role was not just a job—it was a crucible that shaped my career, infusing it with real-world applications of
                         my diverse skill set.
                     </Row>
-                    <Row>Beyond academia and professional ventures, I possess a broad spectrum of self-taught skills and interests that speak
+                    <Row className='introDesc'>Beyond academia and professional ventures, I possess a broad spectrum of self-taught skills and interests that speak
                         to my insatiable curiosity and commitment to lifelong learning. Fluent in English and Korean, with conversational abilities in
                         Japanese, Spanish, and French, my communication skills are as diverse as my technical ones. My proficiency extends to practical
                         and hands-on skills like bartending, 3D printing and prototyping, and working with Arduino and resin/silicone prototyping.
                     </Row>
-                    <Row>I am driven by a fervent passion to merge the seemingly disparate realms of technology and art. To me,
+                    <Row className='introDesc'>I am driven by a fervent passion to merge the seemingly disparate realms of technology and art. To me,
                         each new skill acquired is a brushstroke in the larger canvas of my career. The synergy of technology
                         and art does not just enhance aesthetics; it revolutionizes how we interact with and understand the world around us.
                         I am constantly seeking to broaden my knowledge base, because in the fusion of tech and art, I see the potential for groundbreaking innovation and creativity.
                     </Row>
-                    <Row>As I look towards the future, I am eager to contribute to and lead initiatives that harness this potent combination of art and technology,
+                    <Row className='introDesc'>As I look towards the future, I am eager to contribute to and lead initiatives that harness this potent combination of art and technology,
                         aiming to create transformative experiences that resonate and inspire. Let’s collaborate to push the boundaries of what's possible.
                     </Row>
                 </Col>
@@ -189,7 +189,7 @@ const IntroSection = () => {
                     <hr className = 'horizontalLine' />
                     </Row>
                     <Row className='list-item'>
-                    <Col className='text-start list-1'>Bertending Certification</Col>
+                    <Col className='text-start list-1'>Bartending Certification</Col>
                     <Col className='text-center list-2'>Toronto Institute of Bartending</Col>
                     <Col className='text-end list-3'>2018</Col>
                     <hr className = 'horizontalLine' />

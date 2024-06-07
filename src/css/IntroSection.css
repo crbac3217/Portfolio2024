@@ -7,7 +7,7 @@
 }
 
 a{
-    color:#fd3131;
+    color:#ca1f1f;
 }
 
 .intro-content{
@@ -27,6 +27,9 @@ a{
     padding-left: 0;
     margin-left: 0;
     padding-bottom: 0.125rem;
+    font-family: "lemon-sans-next-condensed", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
 }
 
 .intro-list{
@@ -59,4 +62,10 @@ a{
 
 .horizontalLine{
     color:gray;
+}
+
+.introDesc{
+    font-family: "lemon-sans-next-condensed", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
 }

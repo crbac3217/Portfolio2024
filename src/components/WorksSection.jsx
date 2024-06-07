@@ -171,7 +171,6 @@ const WorksSection = () => {
         </div>
         <div className='contacts-bg'>
         <div className="button">
-      <span>Let's get in touch!</span>
       <div className="container">
       <a href="mailto:crbac3217@gmail.com" target="_blank" rel="noopener noreferrer">
             <img
