@@ -16,6 +16,42 @@ import SnB101 from './works/SnB101';
 
 const worksData = [
     {
+        title: 'Dragonkin: The Banished - Official Announcement Trailer',
+        year: '2024',
+        organization: 'Work - Altar Creative',
+        type: ['3D Modelling', 'Game Engine Trailer'],
+        skills: ['Unreal Engine', '3D Modelling', 'Quixel Mixer', 'Marvelous Designer', 'Adobe Photoshop', 'Adobe Substance Painter', 'Autodesk Maya'],
+        body: Dkin,
+        image: '/img/DKThumb.jpg'
+    },
+    {
+        title: 'Skull and Bones: Gameplay Deep Dive Trailer',
+        year: '2023',
+        organization: 'Work - Altar Creative',
+        type: ['Gameplay Capture', 'Motion Design', 'Game Capture'],
+        skills: ['Adobe After Effects', 'VFX', 'Adobe Photoshop'],
+        body: SnB101,
+        image: '/img/SnBThumb.jpg'
+    },
+    {
+        title: 'Dead by Daylight | Tome 16: EXISTENCE | Reveal Trailer',
+        year: '2023',
+        organization: 'Work - Altar Creative',
+        type: ['Game Engine Trailer', 'Motion Design', 'Game Capture'],
+        skills: ['Adobe After Effects', 'VFX', 'Unreal Engine', 'Adobe Photoshop'],
+        body: DbdTome16,
+        image: '/img/Tome16Thumb.jpg'
+    },
+    {
+        title: 'Marketing Camera',
+        year: '2023',
+        organization: 'Work - Altar Creative',
+        type: ['Game Design'],
+        skills: ['Unity', 'C#', 'Unreal Engine', 'C++'],
+        body:MCam,
+        image: '/img/MCam1.jpg'
+    },
+    {
         title: 'Arm and Hammer Baking Soda',
         year:'2018',
         organization: 'School - OCAD',
@@ -52,15 +88,6 @@ const worksData = [
         image: '/img/arcusThumb.jpg'
     },
     {
-        title: 'Dead by Daylight | Tome 16: EXISTENCE | Reveal Trailer',
-        year: '2023',
-        organization: 'Work - Altar Creative',
-        type: ['Game Engine Trailer', 'Motion Design', 'Game Capture'],
-        skills: ['Adobe After Effects', 'VFX', 'Unreal Engine', 'Adobe Photoshop'],
-        body: DbdTome16,
-        image: '/img/Tome16Thumb.jpg'
-    },
-    {
         title: 'Omm',
         year: '2023',
         organization: 'Personal',
@@ -68,33 +95,6 @@ const worksData = [
         skills: ['Adobe XD', 'Adobe Illustrator', 'Blender', 'Adobe Photoshop', 'Flutter'],
         body: Omm,
         image: '/img/ommThumb.png'
-    },
-    {
-        title: 'Skull and Bones: Gameplay Deep Dive Trailer',
-        year: '2023',
-        organization: 'Work - Altar Creative',
-        type: ['Gameplay Capture', 'Motion Design', 'Game Capture'],
-        skills: ['Adobe After Effects', 'VFX', 'Adobe Photoshop'],
-        body: SnB101,
-        image: '/img/SnBThumb.jpg'
-    },
-    {
-        title: 'Marketing Camera',
-        year: '2023',
-        organization: 'Work - Altar Creative',
-        type: ['Game Design'],
-        skills: ['Unity', 'C#', 'Unreal Engine', 'C++'],
-        body:MCam,
-        image: '/img/MCam1.jpg'
-    },
-    {
-        title: 'Dragonkin: The Banished - Official Announcement Trailer',
-        year: '2024',
-        organization: 'Work - Altar Creative',
-        type: ['3D Modelling', 'Game Engine Trailer'],
-        skills: ['Unreal Engine', '3D Modelling', 'Quixel Mixer', 'Marvelous Designer', 'Adobe Photoshop', 'Adobe Substance Painter', 'Autodesk Maya'],
-        body: Dkin,
-        image: '/img/DKThumb.jpg'
     },
     {
         title: 'Portfolio',
