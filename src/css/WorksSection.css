@@ -20,12 +20,16 @@
     padding-bottom: 10vh;
 }
 
-.work-title{
+.work-title {
     font-family: "lemon-sans-next-condensed", sans-serif;
     font-weight: 700;
     font-size: 1.3em;
-    color:#5D4735;
+    color: #4B3628; /* Darker color */
+    white-space: nowrap; /* Prevent wrapping to multiple lines */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for long text */
 }
+
 
 .works-list {
     list-style: none;
@@ -159,4 +163,9 @@ iframe{
     fill:#fff;
   }
   
-  
+  /* Adjust font size for mobile devices */
+@media (max-width: 768px) {
+    .work-title {
+        font-size: 1em; /* Smaller font size for mobile screens */
+    }
+}

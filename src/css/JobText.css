@@ -1,5 +1,7 @@
 .job-text {
     position: absolute;
+    white-space: nowrap;
+    font-size: clamp(1.5rem, 5vw, 3rem);
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;

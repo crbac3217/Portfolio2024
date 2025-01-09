@@ -32,3 +32,15 @@ h1{
     width: 80vw;
     height: 80vh;
 }
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+    .benNames {
+        width: 160vw; /* Make video wider on smaller screens */
+    }
+
+    .Three {
+        width: 95vw; /* Increase 3D canvas size */
+        height: 95vh;
+    }
+}

@@ -69,3 +69,33 @@ a{
     font-weight: 400;
     font-size: 1.2em;
 }
+
+@media (max-width: 768px) {
+    .list-item {
+        padding-left: 0;
+        margin-left: 0;
+        padding-bottom: 0.125rem;
+        font-family: "lemon-sans-next-condensed", sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        display: flex; /* Use flexbox for easier alignment */
+        justify-content: space-between;
+    }
+
+    .list-1 {
+        padding-left: 0;
+        padding-bottom: 0.25rem;
+        font-weight: 400;
+        flex: 1; /* Allow list-1 to fill available space */
+        text-align: left; /* Align text to the left */
+    }
+
+    .list-2 {
+        display: none; /* Hide list-2 on mobile */
+    }
+
+    .list-3 {
+        font-style: italic;
+        text-align: right; /* Align list-3 to the right */
+    }
+}

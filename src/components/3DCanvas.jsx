@@ -4,7 +4,13 @@ import { OrbitControls, useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 import CelMaterial from './CelMaterial';
 
-const BModel = ({ mouseX }) => {
+// Helper function to calculate the scale based on viewport width
+const calculateScale = () => {
+  const viewportWidth = window.innerWidth;
+  return Math.max(viewportWidth / 1920, 0.6); // Minimum scale is 0.6
+};
+
+const BModel = ({ mouseX, scale }) => {
   const { scene, animations } = useGLTF('/models/Gltf/B.glb');
   const modelRef = useRef();
   const mixerRef = useRef();
@@ -22,6 +28,7 @@ const BModel = ({ mouseX }) => {
   useFrame((state, delta) => {
     if (modelRef.current) {
       modelRef.current.rotation.z = mouseX * 0.1;
+      modelRef.current.scale.set(scale, scale, scale); // Apply dynamic scaling
     }
     mixerRef.current?.update(delta);
   });
@@ -29,7 +36,7 @@ const BModel = ({ mouseX }) => {
   return <primitive ref={modelRef} object={scene} />;
 };
 
-const EModel = ({ mouseX }) => {
+const EModel = ({ mouseX, scale }) => {
   const { scene } = useGLTF('/models/Gltf/E.glb');
   const modelRef = useRef();
 
@@ -44,37 +51,49 @@ const EModel = ({ mouseX }) => {
   useFrame(() => {
     if (modelRef.current) {
       modelRef.current.rotation.z = mouseX * 0.1;
+      modelRef.current.scale.set(scale, scale, scale); // Apply dynamic scaling
     }
   });
 
   return <primitive ref={modelRef} object={scene} />;
 };
 
-const NModel = ({ mouseX }) => {
+const NModel = ({ mouseX, scale }) => {
   const { scene } = useGLTF('/models/Gltf/N.glb');
   const modelRef = useRef();
+
   useFrame(() => {
     if (modelRef.current) {
       modelRef.current.rotation.z = mouseX * 0.1;
+      modelRef.current.scale.set(scale, scale, scale); // Apply dynamic scaling
     }
   });
+
   return <primitive ref={modelRef} object={scene} />;
 };
 
 const Canv = () => {
   const [mouseX, setMouseX] = useState(0);
-  const [mouseY, setMouseY] = useState(0);
+  const [scale, setScale] = useState(calculateScale()); // Initial scale based on viewport width
 
   const handleMouseMove = (event) => {
     const x = (event.clientX / window.innerWidth) * 2 - 1; // Normalize mouse x position
     const y = (event.clientY / window.innerHeight) * 2 - 1; // Normalize mouse y position
     setMouseX(x);
-    setMouseY(y);
     CelMaterial.uniforms.lightDirection.value.set(x, y, 1).normalize();
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setScale(calculateScale()); // Update scale dynamically on resize
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <div className='Three' onMouseMove={handleMouseMove} style={{ width: '100%', height: '100%' }}>
+    <div className="Three" onMouseMove={handleMouseMove} style={{ width: '100%', height: '100%' }}>
       <Canvas
         camera={{ position: [0, 0, 20] }}
         gl={{ antialias: true }}
@@ -85,11 +104,11 @@ const Canv = () => {
         }}
       >
         <ambientLight intensity={1} />
-        <pointLight position={[mouseX * 10, mouseY * 10, 10]} intensity={50} distance={500} decay={1} />
-        <group rotation={[-Math.PI / -2, 0, 0]}>
-          <BModel mouseX={mouseX} position={[-2, 0, 0]} />
-          <EModel mouseX={mouseX} position={[0, 0, 0]} />
-          <NModel mouseX={mouseX} position={[2, 0, 0]} />
+        <pointLight position={[mouseX * 10, 0, 10]} intensity={50} distance={500} decay={1} />
+        <group rotation={[-Math.PI / -2, 0, 0]}> {/* Original orientation retained */}
+          <BModel mouseX={mouseX} scale={scale} />
+          <EModel mouseX={mouseX} scale={scale} />
+          <NModel mouseX={mouseX} scale={scale} />
         </group>
         <OrbitControls />
       </Canvas>

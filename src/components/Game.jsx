@@ -5,12 +5,16 @@ import Ball from './Ball';
 import Brick from './Brick';
 
 const generateBricks = () => {
+    const isNarrowScreen = window.innerWidth <= 768; // Detect narrow screens (mobile or tablet)
+
     const bricks = [];
-    const startX = 7.05; // starting x position in vw
-    const startY = 3; // starting y position in vh
-    const brickWidth = 2.5; // brick width in vw
-    const brickHeight = 4; // brick height in vh
-    const gap = 0.15; // gap in vw and vh for both dimensions
+    const startX = isNarrowScreen ? 12 : 7.05; // Starting x position in vw
+    const startY = isNarrowScreen ? 4 : 3; // Starting y position in vh
+
+    // Dynamic brick dimensions and gap
+    const brickWidth = isNarrowScreen ? 2 : 2.5; // Half width on narrow screens
+    const brickHeight = isNarrowScreen ? 1 : 4; // Half height on narrow screens
+    const gap = isNarrowScreen ? 0.3 : 0.15; // Double the gap on narrow screens
 
     const letters = [
         { name: 'B', pattern: [
@@ -64,6 +68,8 @@ const generateBricks = () => {
     return bricks;
 };
 
+
+
 const Game = () => {
     const colors = ['9C77D8', 'A877D8', 'C577D8', 'E7D7F0', 'ECD7F0', 'F0D7EF', 'FC67A4', '9467FC'];
     const [ballColor, setBallColor] = useState(colors[0]);
@@ -113,6 +119,17 @@ const Game = () => {
         document.addEventListener('keydown', handleKeyPress);
         return () => document.removeEventListener('keydown', handleKeyPress);
     }, []);
+
+    
+    useEffect(() => {
+        const handleResize = () => {
+            setBricks(generateBricks());
+        };
+    
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    
 
     useEffect(() => {
         const interval = setInterval(() => {
