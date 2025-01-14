@@ -63,6 +63,13 @@ const IntroSection = () => {
                 <Col xs={12} className="intro-list">
                 <Row className="display-5 dpText title">Licenses & Certifications</Row>
                     <Row className='list-item'>
+                    <Col className='text-start list-1'><a href="https://www.credly.com/badges/795f7a45-1a39-4de3-8ca6-ccc38e8c6118/public_url"
+                     target="_blank" rel="noreferrer" >AWS Certified Solutions Architect – Associate</a></Col>
+                    <Col className='text-center list-2'>Amazon Web Services (AWS)</Col>
+                    <Col className='text-end list-3'>2024</Col>
+                    <hr className = 'horizontalLine' />
+                    </Row>
+                    <Row className='list-item'>
                     <Col className='text-start list-1'><a href="https://www.credly.com/badges/6c0afed6-5036-4976-bafe-68669f882cdb/linked_in_profile"
                      target="_blank" rel="noreferrer" >Certified Cloud Practitioner</a></Col>
                     <Col className='text-center list-2'>Amazon Web Services (AWS)</Col>

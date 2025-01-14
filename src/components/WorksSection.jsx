@@ -13,6 +13,7 @@ import Omm from './works/Omm';
 import Portfolio from './works/PortFolio';
 import Scribble from './works/Scribble';
 import SnB101 from './works/SnB101';
+import AMirage  from './works/AMirage';
 
 const worksData = [
     {
@@ -23,6 +24,16 @@ const worksData = [
         skills: ['Unreal Engine', '3D Modelling', 'Quixel Mixer', 'Marvelous Designer', 'Adobe Photoshop', 'Adobe Substance Painter', 'Autodesk Maya'],
         body: Dkin,
         image: '/img/DKThumb.jpg'
+    },
+    {
+        title: 'Assassin\'s Creed Mirage: PC Features Trailer',
+        year: '2024',
+        organization: 'Altar Creative',
+        type: ['Game Capture', 'Game Trailer'],
+        skills: ['Game Capture', 'Game Tool Research', 'Composite Editing'],
+        body: AMirage,
+        image: '/img/AMirage.png',
+        video: 'https://www.youtube.com/embed/LbpQ8940EZI',
     },
     {
         title: 'Skull and Bones: Gameplay Deep Dive Trailer',
