@@ -23,7 +23,7 @@ const DbdTome15 = () => {
                         <Col>
                             <iframe
                                 className="workImages"
-                                src="https://youtu.be/5oQ89V-H1x4?si=SF2bYDOcbpHuDNqu"
+                                src="https://www.youtube.com/embed/5oQ89V-H1x4"
                                 title="Tools of Torment Mid Chapter Trailer"
                             ></iframe>
                         </Col>
