@@ -32,7 +32,7 @@ const XDef = () => {
                         <Col>
                             <iframe
                                 className="workImages"
-                                src="https://youtu.be/UJiQzUEuLYE"
+                                src="https://youtu.be/UJiQzUEuLYE?si=4GqSJ-KTxnx8xHS2"
                                 title="XDefiant Season 1 Reveal Trailer"
                             ></iframe>
                         </Col>
