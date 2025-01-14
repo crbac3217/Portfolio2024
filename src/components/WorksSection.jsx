@@ -14,6 +14,8 @@ import Portfolio from './works/PortFolio';
 import Scribble from './works/Scribble';
 import SnB101 from './works/SnB101';
 import AMirage  from './works/AMirage';
+import DbdTome15 from './works/DbdTome15';
+import XDef from './works/XDef';
 
 const worksData = [
     {
@@ -28,7 +30,7 @@ const worksData = [
     {
         title: 'Assassin\'s Creed Mirage: PC Features Trailer',
         year: '2024',
-        organization: 'Altar Creative',
+        organization: 'Work - Altar Creative',
         type: ['Game Capture', 'Game Trailer'],
         skills: ['Game Capture', 'Game Tool Research', 'Composite Editing'],
         body: AMirage,
@@ -45,6 +47,15 @@ const worksData = [
         image: '/img/SnBThumb.jpg'
     },
     {
+        title: 'XDefiant - Season 1 Reveal Trailer',
+        year: '2023',
+        organization: 'Work - Altar Creative',
+        type: ['Game Engine Trailer', 'Game Capture'],
+        skills: ['Autodesk Maya', 'Adobe Photoshop', 'Game Capture'],
+        body: XDef,
+        image: '/img/XDefThumb.png',
+    },
+    {
         title: 'Dead by Daylight | Tome 16: EXISTENCE | Reveal Trailer',
         year: '2023',
         organization: 'Work - Altar Creative',
@@ -52,6 +63,15 @@ const worksData = [
         skills: ['Adobe After Effects', 'VFX', 'Unreal Engine', 'Adobe Photoshop'],
         body: DbdTome16,
         image: '/img/Tome16Thumb.jpg'
+    },
+    {
+        title: 'Dead by Daylight | Tools of Torment Mid Chapter',
+        year: '2023',
+        organization: 'Work - Altar Creative',
+        type: ['Game Engine Trailer', 'Motion Design', 'Game Capture'],
+        skills: ['Adobe After Effects', 'Unreal Engine', 'Adobe Photoshop', 'Game Capture', 'VFX'],
+        body: DbdTome15,
+        image: '/img/Tome15.png',
     },
     {
         title: 'Marketing Camera',
