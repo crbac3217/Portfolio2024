@@ -40,10 +40,9 @@ const WelcomeSection = () => {
 
     let fullText = "Hi, my name is";
     let J1 = "Graphic Designer";
-    let J2 = "Game Designer";
+    let J2 = "Technical Artist";
     let J3 = "Motion Designer";
-    let J4 = "3D Generalist";
-    let J5 = "Frontend Developer";
+    let J4 = "Game Designer";
     let jobText = "";
     let text = "Hi";
     let top = '50%';
@@ -131,16 +130,13 @@ const WelcomeSection = () => {
                 <video src={'/video/BenGD.webm'} alt="Ben" className='benNames' autoPlay loop muted />
             </div>
             <div className="snap-point" ref={section3Ref}>
-                <Game />
+                <FrontEnd />
             </div>
             <div className="snap-point" ref={section4Ref}>
                 <video src={'/video/MotionGr.webm'} alt="Ben" className='benNames' autoPlay loop muted />
             </div>
             <div className="snap-point" ref={section5Ref}>
-                {isCanvVisible() && <Canv />}
-            </div>
-            <div className="snap-point" ref={section6Ref}>
-                <FrontEnd />
+                <Game />
             </div>
             <JobText text={jobText} style={jobTextStyle} />
         </div>

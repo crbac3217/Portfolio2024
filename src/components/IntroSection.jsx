@@ -10,30 +10,11 @@ const IntroSection = () => {
             <Row className="intro-content">
                 <Col xs={12}>
                     <Row className="display-1 dpText">Hello,</Row>
-                    <Row className='introDesc'>I am Ben Hakgyun Lee, an exquisitely versatile and deeply committed creative technologist, with a Bachelor’s degree from OCAD University.
-                        My academic journey was rich with diverse studio courses, equipping me with a profound expertise in both traditional and digital art forms.
-                        My technical prowess spans an impressive array of tools and technologies including Adobe Creative Suite (Photoshop, Illustrator, Premiere, After Effects,
-                        XD, Substance Painter, and InDesign), 3D modeling and animation tools (Blender, ZBrush, Maya, Rhino3D, Marvelous Designer), and comprehensive game development
-                        platforms (Unreal Engine, Unity). Additionally, I am skilled in web development technologies such as JavaScript, HTML, CSS, React, alongside programming languages
-                        like Python, C#, and C++.</Row>
-                    <Row className='introDesc'>My tenure at Altar Creative in Montreal allowed me to thrive in an environment that bridges high-stakes advertising with the interactive world of
-                        video game commercials. Here, I applied my skills in motion graphics, video editing, and digital design, further refining my ability to contribute uniquely
-                        in high-paced, innovative settings. This role was not just a job—it was a crucible that shaped my career, infusing it with real-world applications of
-                        my diverse skill set.
-                    </Row>
-                    <Row className='introDesc'>Beyond academia and professional ventures, I possess a broad spectrum of self-taught skills and interests that speak
-                        to my insatiable curiosity and commitment to lifelong learning. Fluent in English and Korean, with conversational abilities in
-                        Japanese, Spanish, and French, my communication skills are as diverse as my technical ones. My proficiency extends to practical
-                        and hands-on skills like bartending, 3D printing and prototyping, and working with Arduino and resin/silicone prototyping.
-                    </Row>
-                    <Row className='introDesc'>I am driven by a fervent passion to merge the seemingly disparate realms of technology and art. To me,
-                        each new skill acquired is a brushstroke in the larger canvas of my career. The synergy of technology
-                        and art does not just enhance aesthetics; it revolutionizes how we interact with and understand the world around us.
-                        I am constantly seeking to broaden my knowledge base, because in the fusion of tech and art, I see the potential for groundbreaking innovation and creativity.
-                    </Row>
-                    <Row className='introDesc'>As I look towards the future, I am eager to contribute to and lead initiatives that harness this potent combination of art and technology,
-                        aiming to create transformative experiences that resonate and inspire. Let’s collaborate to push the boundaries of what's possible.
-                    </Row>
+                    <Row className='introDesc'>I’m Ben Hakgyun Lee — a creative technologist focused on real-time lighting, in-engine capture, and motion design. I hold a B.Des from OCAD University and deliver clean, on-brand visuals end-to-end.</Row>
+<Row className='introDesc'>I work across Unreal Engine and Unity, Adobe Creative Cloud (After Effects, Premiere Pro, Photoshop, Illustrator), and 3D DCCs (Blender, Maya). I can take a sequence from lookdev and lighting through capture, edit, grade, and final delivery.</Row>
+<Row className='introDesc'>At Altar Creative (Montréal), I supported fast-turn game campaigns—motion graphics, editing, and digital design—partnering with producers and game teams under tight deadlines.</Row>
+<Row className='introDesc'>Languages: English and Korean; working Japanese, Spanish, and French. Always learning, iterating, and collaborating on realtime, trailers, and interactive visuals.</Row>
+
                 </Col>
             </Row>
             <Row className ="intro-content">
@@ -53,7 +34,7 @@ const IntroSection = () => {
                     </Row>
                     <Row className='list-item'>
                     <Col className='text-start list-1'>Altar Creative</Col>
-                    <Col className='text-center list-2'>Tool Specialist</Col>
+                    <Col className='text-center list-2'>Technical Artist / Tool Specialist</Col>
                     <Col className='text-end list-3'>2022-2024</Col>
                     <hr className = 'horizontalLine' />
                     </Row>
@@ -62,6 +43,12 @@ const IntroSection = () => {
             <Row className ="intro-content">
                 <Col xs={12} className="intro-list">
                 <Row className="display-5 dpText title">Licenses & Certifications</Row>
+                    <Row className='list-item'>
+                    <Col className='text-start list-1'>Unreal Engine 5: One Course Solution For Niagara VFX</Col>
+                    <Col className='text-center list-2'>Udemy</Col>
+                    <Col className='text-end list-3'>2025</Col>
+                    <hr className = 'horizontalLine' />
+                    </Row>
                     <Row className='list-item'>
                     <Col className='text-start list-1'><a href="https://www.credly.com/badges/795f7a45-1a39-4de3-8ca6-ccc38e8c6118/public_url"
                      target="_blank" rel="noreferrer" >AWS Certified Solutions Architect – Associate</a></Col>
